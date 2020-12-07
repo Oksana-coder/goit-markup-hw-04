@@ -194,7 +194,7 @@ img{
     align-items: center;
     width: 270px;
     height: 120px;
-    background: #F5F4FA;
+    background: var(--secondary-bg-color);
     margin-bottom: 30px;
     border-radius: 4px;
 }
@@ -259,10 +259,17 @@ img{
     font-size: 16px;
     line-height: 1.2;
 }
-.social-networks,
+.social-networks{
+    display: flex;
+}
+.social-networks li + li{
+    margin-left: 10px;
+}
 .clients-logos{
     display: flex;
-    justify-content: space-between;
+}
+.clients-logos li + li{
+    margin-left: 30px;
 }
 .social-link{
     display: flex;
@@ -316,7 +323,6 @@ img{
 .footer-line{
     display: flex;
     align-items: baseline;
-    /* justify-content: space-between; (for later instead of margin below)*/
     padding-top: 60px;
     padding-bottom: 60px;
 }
